@@ -1,0 +1,47 @@
+/* ------- CSS Color vars: ------ */
+:root{
+    --coal-bg: #27272a;
+    --gray-bg: #71717a;
+    --lava-orange: #ea580c;
+    --sunny-yellow: #fcd34d;
+    --amber-white: #fefce8;
+}
+/* ---------Body section: -------- */
+html{
+    height: 100svh;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-image:  linear-gradient(
+        rgba(0, 0, 0, 0.45), 
+        rgba(0, 0, 0, 0.45)
+      ), url(./img/brick-bg-gareth-david-unsplash.jpg);
+    background-size: cover;
+    
+}
+
+/* ---------Header section: -------- */
+header,ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    width: 100%;
+    height: 3rem;
+    justify-content: space-around;
+    background-color: var(--coal-bg);
+
+}
+
+ul>li{
+    font-size: 2rem;
+    color: var(--amber-white);
+    text-shadow: 2px 1px var(--gray-bg);
+    align-self: center;
+}
