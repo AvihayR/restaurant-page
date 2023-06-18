@@ -1,28 +1,51 @@
 /* ------- CSS Color vars: ------ */
 :root{
     --coal-bg: #27272a;
+    --transparent-coal: #27272ac6;
     --gray-bg: #71717a;
     --lava-orange: #ea580c;
     --sunny-yellow: #fcd34d;
     --amber-white: #fefce8;
+    height: 100vh;
 }
 /* ---------Body section: -------- */
-html{
-    height: 100svh;
+
+body,div#content,#content-header{
+    display: flex;
+    flex-direction: column;
 }
 
 body{
+    min-height: 100%;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     background-image:  linear-gradient(
         rgba(0, 0, 0, 0.45), 
         rgba(0, 0, 0, 0.45)
       ), url(./img/brick-bg-gareth-david-unsplash.jpg);
     background-size: cover;
-    
 }
+
+/* ---------Text styling: -------- */
+h1{
+    font-size: 3.5rem;
+    color: var(--lava-orange);
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--sunny-yellow);
+}
+
+.main-p{
+    color: var(--amber-white);
+}
+
+#content-header p{
+    color: var(--sunny-yellow);
+    font-size: 1.5rem;
+}
+
+
 
 /* ---------Header section: -------- */
 header,ul{
@@ -40,8 +63,45 @@ ul{
 }
 
 ul>li{
-    font-size: 2rem;
-    color: var(--amber-white);
-    text-shadow: 2px 1px var(--gray-bg);
+    font-size: 2.5rem;
+    color: var(--gray-bg);
     align-self: center;
+}
+
+/* ---------content div section: -------- */
+div{
+    flex: 1;
+    justify-content:center;
+}
+
+div#content{
+    width: 90vw;
+    height: 100%;
+    margin: 2vh auto; 
+    background-color: var(--transparent-coal);
+    align-items: center;
+    gap: 5px;
+    justify-self: center;
+}
+
+#content-header,#content-main{
+    align-items: center;
+    text-align: center;
+}
+
+img.cover-img{
+    width: 80%;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+/* ---------Footer section: -------- */
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: var(--transparent-coal);
+    position: absolute;
+    bottom: 0;
+
 }
