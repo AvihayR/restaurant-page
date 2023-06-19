@@ -60,7 +60,7 @@ table {
 }
 /* ---------Body section: -------- */
 
-body,div#content,#content-header{
+body,div#content,#content-main{
     display: flex;
     flex-direction: column;
 }
@@ -151,15 +151,22 @@ div#content{
 
 #content-header,#content-main{
     align-items: center;
+    justify-content: flex-start;
     text-align: center;
     margin-top: 1rem;
+    width: 95%;
 }
 
 img.cover-img{
-    width: 60%;
+    max-width: 50%;
     height: auto;
     border-radius: 15px;
     margin-top: 15px;
+}
+
+img.menu-img{
+    max-width: 100%;
+    display: block;
 }
 
 /* ---------Footer section: -------- */
