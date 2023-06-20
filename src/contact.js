@@ -25,7 +25,7 @@ export default function contact() {
   const tinderLink = document.createElement('a');
   const phoneNumber = document.createElement('p');
 
-  const h2Header = document.createElement('h2');
+  const h1Header = document.createElement('h1');
   const pHeader = document.createElement('p');
 
   //add element ids and classes:
@@ -35,7 +35,7 @@ export default function contact() {
   homeLogo.classList.add('logo');
   tinderLogo.classList.add('logo');
   phoneLogo.classList.add('logo');
-  h2Header.id = 'contact-header';
+  h1Header.id = 'contact-header';
   pHeader.id = 'contact-p';
   tinderLink.setAttribute('href', 'https://github.com/AvihayR/restaurant-page');
   contactUl.id = 'contact-ul';
@@ -49,7 +49,7 @@ export default function contact() {
   tinderLogo.src = tinderImg;
   phoneLogo.src = phoneImg;
 
-  h2Header.innerText = 'Contact us';
+  h1Header.innerText = 'Contact us';
   pHeader.innerText = `
   Visit our family Shop & Restaurant, at Element City.
 
@@ -62,7 +62,7 @@ export default function contact() {
   phoneNumber.innerText = '+999-00-111-22-33';
 
   //Add created elements to contentDiv:
-  contentHeader.appendChild(h2Header);
+  contentHeader.appendChild(h1Header);
   contentHeader.appendChild(pHeader);
 
   contactLi1.appendChild(homeLogo);

@@ -8,7 +8,7 @@ export default function menu() {
   //Create elements:
   const contentMain = document.createElement('div');
 
-  const h2Main = document.createElement('h2');
+  const h1Main = document.createElement('h1');
   const pMain = document.createElement('p');
   const imgMain = document.createElement('img');
   const imgMain1 = document.createElement('img');
@@ -18,9 +18,10 @@ export default function menu() {
   imgMain.classList.add('menu-img');
   imgMain1.classList.add('menu-img');
   pMain.id = 'main-p';
+  h1Main.id = 'h1-menu';
 
   //Elements content:
-  h2Main.innerText = 'Menu';
+  h1Main.innerText = 'Menu';
   pMain.innerText = `
   Our menu might not fit every element out there,
   But as long as you're not made out of tears,
@@ -31,7 +32,7 @@ export default function menu() {
   imgMain1.src = itemsImg;
 
   //Add created elements to contentDiv:
-  contentMain.appendChild(h2Main);
+  contentMain.appendChild(h1Main);
   contentMain.appendChild(pMain);
   contentMain.appendChild(imgMain);
   contentMain.appendChild(imgMain1);
