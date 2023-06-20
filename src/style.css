@@ -60,9 +60,24 @@ table {
 }
 /* ---------Body section: -------- */
 
-body,div#content,#content-main{
+body,div#content,#content-main,#contact-ul{
     display: flex;
     flex-direction: column;
+}
+
+#contact-ul{
+    background-color: none;
+}
+
+.contact-li{
+    gap: 3px;
+}
+.contact-li p, .contact-li a{
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    line-height: 2rem;
+    text-decoration: underline;
 }
 
 body{
@@ -79,23 +94,24 @@ body{
 h1{
     font-size: 3.5rem;
     color: var(--lava-orange);
+    letter-spacing: 2px;
 }
 
 h2{
     font-size: 2rem;
     color: var(--sunny-yellow);
+    letter-spacing: 1.5px;
 }
 
 #main-p{
     color: var(--amber-white);
 }
 
-#content-header p{
-    color: var(--sunny-yellow);
-    font-size: 1.5rem;
+#contact-p{
+    font-size: 1.3rem;
+    color: var(--gray-bg);
+    line-height: 1rem;
 }
-
-
 
 /* ---------Header section: -------- */
 header{
@@ -105,13 +121,13 @@ header{
     width: 100%;
 }
 
-header,ul{
+header,ul,li{
     display: flex;
     margin: 0;
     padding: 0;
 }
 
-ul{
+#header-ul{
     width: 100%;
     height: 3rem;
     justify-content: space-around;
@@ -157,6 +173,12 @@ div#content{
     width: 95%;
 }
 
+.subheader{
+    font-size: 1.3rem;
+    color: var(--sunny-yellow);
+    letter-spacing: 1.5px;
+}
+
 img.cover-img{
     max-width: 50%;
     height: auto;
@@ -167,6 +189,10 @@ img.cover-img{
 img.menu-img{
     max-width: 100%;
     display: block;
+}
+
+.logo{
+    height: 2rem;
 }
 
 /* ---------Footer section: -------- */

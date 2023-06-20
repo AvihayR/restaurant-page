@@ -19,6 +19,7 @@ export default function homePage() {
 
   //add element ids and classes:
   contentHeader.id = 'content-header';
+  pHeader.classList.add('subheader');
   contentMain.id = 'content-main';
   imgHeader.classList.add('cover-img');
   imgMain.classList.add('cover-img');

@@ -13,6 +13,7 @@ export default function header() {
   liHome.id = 'home-tab';
   liMenu.id = 'menu-tab';
   liContact.id = 'contact-tab';
+  ul.id = 'header-ul';
 
   //add content to elements:
   liHome.textContent = 'Home';
