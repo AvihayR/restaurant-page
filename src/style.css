@@ -220,11 +220,13 @@ footer{
 footer a{
     display: block;
     text-decoration: none;
-    color: white;
+    color: var(--gray-bg);
     font-size: 1.2rem;
     line-height: 1.5rem;
+    transition: 0.5s;
 }
 
 footer>a:hover{
     text-decoration: underline;
+    color: white;
 }
